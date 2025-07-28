@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>COMP2132 Assignment 4</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/assignment04-data.js"></script>
+  <script src="js/assignment04-functions.js"></script>
+  <script src="js/assignment04-app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Assignment 4</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Part One: List of images</h2>
+      <p>A function that creates an HTML list of images based on an array of image paths</p>
+
+      <h3>Invoke Not Using Required Array Argument</h3>
+      <p>Invoking with a string, not an array.</p>
+      <div class="output">
+        <p>👎 <strong>Error:</strong> <span id="error1"></span></p>
+        <p>👎 <strong>Error:</strong> <span id="error2"></span></p>
+      </div>
+
+      <h3>Invoke With Arrays Containing Wrong Data Type</h3>
+      <p>Invoking with an array of numbers, not string image names<br>
+      <small>(See Console for function error message).</small></p>
+      <div id="numberArrayOutput"></div>
+
+      <p>Invoking with an array of booleans, not string image names<br>
+      <small>(See Console for function error message).</small></p>
+      <div id="booleanArrayOutput"></div>
+
+      <p>Invoking with a valid array of image names.</p>
+      <div id="validImagesOutput"></div>
+
+      <p>Invoking with an array of some image names and some junk<br>
+      <small>(See Console for function error messages).</small></p>
+      <div id="mixedImagesOutput"></div>
+    </section>
+
+
+    <section>
+      <h2>Part Two: List of links</h2>
+      <p>A function that creates an HTML list of links based on an array of web URLs</p>
+
+      <p>Trying with an array that contains booleans, and not string URLs…</p>
+      <div id="badLinks1"></div>
+
+      <p>Trying with a number, not an array…</p>
+      <div id="badLinks2"></div>
+
+      <p>Trying with a valid array of link URLs…</p>
+      <div id="validLinks"></div>
+
+      <p>Trying with an array of link URLs and also junk…</p>
+      <div id="mixedLinks"></div>
+    </section>
+
+
+    <section>
+      <h2>Part Three: List of names</h2>
+      <p>A function that creates an HTML list of names using &lt;ul&gt; or &lt;ol&gt;</p>
+
+      <p>Trying with invalid first parameter (string)</p>
+      <div id="nameTest1"></div>
+
+      <p>Trying with invalid second parameter ("div")</p>
+      <div id="nameTest2"></div>
+
+      <p>Trying with valid array (unordered list)</p>
+      <div id="nameTest3"></div>
+
+      <p>Trying with valid array (ordered list)</p>
+      <div id="nameTest4"></div>
+    </section>
+  </main>
+</body>
+</html>

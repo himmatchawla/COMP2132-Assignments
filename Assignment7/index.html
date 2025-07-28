@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 7</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Product: <strong>Cotton T-Shirt</strong></h1>
+    <div class="product-container">
+
+      <div class="image-section">
+        <img id="mainImage" src="product-images/t-shirt-black-no-model.jpg" alt="Main Product Image">
+        <div class="thumbnails">
+          <img class="thumbnail selected" src="product-images/t-shirt-black-no-model.jpg" alt="no-model">
+          <img class="thumbnail" src="product-images/t-shirt-black-front.jpg" alt="front">
+          <img class="thumbnail" src="product-images/t-shirt-black-back.jpg" alt="back">
+        </div>
+      </div>
+
+      <form id="productForm" action="thank-you.html" method="get">
+        <div class="price-box">
+          <p>Price: $<span id="price">20.00</span></p>
+          <label for="qty">Quantity:</label>
+          <select id="qty" name="qty">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <p>Total: $<span id="total">20.00</span></p>
+        </div>
+
+        <div class="color-box">
+          <p>Color: <span id="colorLabel">black</span></p>
+          <label><input type="radio" name="color" value="black" checked>Black</label><br>
+          <label><input type="radio" name="color" value="red">Red</label><br>
+          <label><input type="radio" name="color" value="grey">Grey</label>
+        </div>
+
+        <div class="size-box">
+          <p>Size: <span id="sizeLabel">Choose...</span></p>
+          <label><input type="radio" name="size" value="small">Small S</label><br>
+          <label><input type="radio" name="size" value="medium">Medium M</label><br>
+          <label><input type="radio" name="size" value="large">Large L</label>
+        </div>
+
+        <input type="submit" id="submitBtn" value="Choose A Size" disabled>
+      </form>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© Copyright 2025 Himmat Chawla</p>
+  </footer>
+</body>
+</html>

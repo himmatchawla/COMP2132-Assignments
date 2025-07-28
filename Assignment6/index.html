@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 6</title>
+  <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+  <h1>Assignment 6</h1>
+  <p>Feel free to schedule an appointment to meet in person with one of our course advisors. Learn more about some of the great BCIT PTS courses we offer!</p>
+  <p>You can hover over the <span class="tooltip-icon">?</span> in the form below to activate a tool tip, and use the <strong>Show/Hide</strong> button to toggle between showing or not showing the characters in the password field.</p>
+
+  <form id="apptForm" action="thank-you.html" method="get">
+    <fieldset>
+      <label>First name: <input type="text" id="firstname" name="firstname"></label>
+      <label>Last name: <input type="text" id="lastname" name="lastname"></label>
+      <label>Student ID:<input type="text" id="studentID" name="studentID">
+        <span id="tooltipTrigger" class="tooltip-icon">?</span>
+        <span id="tooltipText" class="tooltip-text">BCIT Student IDs must have the following format: A01234567</span>
+      </label>
+      <label>
+        Password:
+        <input type="password" id="password" name="password">
+        <button type="button" id="togglePassword">Show</button>
+      </label>
+      <label>
+        Date:
+        <input type="date" id="apptDate" name="apptDate">
+      </label>
+      <label>
+        Course:
+        <select id="course" name="course">
+          <option disabled selected>Choose your course:</option>
+          <option>COMP1850</option>
+          <option>COMP2132</option>
+          <option>COMP2913</option>
+          <option>COMP3012</option>
+          <option>COMP3015</option>
+        </select>
+      </label>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+  <div id="errorContainer"></div>
+</body>
+</html>

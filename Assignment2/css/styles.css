@@ -1,0 +1,92 @@
+body {
+    background-color: #fffaf9;
+    color: #222;
+    padding: 2rem;
+  }
+
+  .page-header {
+    background-color: #2e5c50;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+  }
+  
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  
+  main {
+    max-width: 960px;
+    margin: auto;
+  }
+
+
+
+  .info-box {
+    flex: 1;
+    border: 2px solid #44715d;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 6px;
+
+  }
+  
+  h2 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .info-box h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  
+  li {
+    padding: 0.3rem 0;
+  }
+
+
+  .warning {
+    background-color: #ffd6d6;
+    border: 1px solid #aa0000;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+  }
+  
+  .warning strong {
+    color: #aa0000;
+    margin-right: 0.5rem;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    color: #555;
+  }
+
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+  

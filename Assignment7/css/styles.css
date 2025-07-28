@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+main {
+    padding: 2rem;
+}
+
+.product-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.image-section {
+    background: #fff;
+    padding: 1rem;
+    max-width: 320px;
+    border: 1px solid #aaa;
+}
+
+.image-section img#mainImage {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 1rem;
+}
+
+.thumbnails img.thumbnail {
+    width: 30%;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: border 0.3s;
+}
+
+.thumbnails img.thumbnail.selected {
+    border-bottom: 3px solid red;
+}
+
+form {
+    border: 1px solid #aaa;
+    min-width: 250px;
+    background: #fff;
+    padding: 1rem;
+}
+
+form div {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+form label {
+    display: block;
+}
+
+#submitBtn {
+    color: white;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px #ccc;
+    width: 100%;
+    padding: 0.6rem;
+    cursor: not-allowed;
+    font-weight: bold;
+    background: #003366;
+}
+
+#submitBtn:enabled {
+    cursor: pointer;
+    background: #0066cc;
+}
+
+footer {
+    color: white;
+    background: grey;
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 2rem;
+
+}

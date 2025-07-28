@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #e1e7f7;
+    }
+
+h1 {
+    color: #0c1489;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+
+.card-img {
+    height: 100px;
+    margin: 5px;
+}
+
+.hand {
+    border-radius: 10px;
+    background-color: #628ec8;
+    padding: 10px;
+}
+
+.player {
+    margin: 20px 0;
+    background-color: #cbdbed;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 10px;
+    color: #171616;
+}
